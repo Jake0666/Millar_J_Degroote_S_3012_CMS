@@ -1,0 +1,324 @@
+.black-bg {
+  background-color: #000; }
+
+.copyright {
+  background-color: #000; }
+
+#going-up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  width: 100px;
+  height: 100px; }
+
+.button {
+  background-color: transparent;
+  border: 4px solid #fff;
+  transition: 0.3s all;
+  font-size: 18px; }
+  .button:hover {
+    color: #000;
+    background-color: #fff; }
+
+a,
+a:hover {
+  color: #fff; }
+
+p {
+  color: #fff; }
+
+h2,
+h3,
+h4 {
+  color: #fff; }
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0; }
+  header .header-cta {
+    height: 30px;
+    margin-bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    header .header-cta li {
+      line-height: 30px; }
+      header .header-cta li .header-phone {
+        max-width: 20px;
+        margin-left: 25px;
+        margin-right: 10px; }
+      header .header-cta li .header-icon {
+        max-width: 20px;
+        float: right;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px; }
+      header .header-cta li .tel {
+        display: none; }
+        @media (min-width: 640px) {
+          header .header-cta li .tel {
+            display: inline; } }
+  header .header-nav {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    header .header-nav li {
+      line-height: 50px;
+      padding-left: 15px;
+      margin-right: 10px; }
+    @media (min-width: 640px) {
+      header .header-nav {
+        height: 70px; }
+        header .header-nav li {
+          line-height: 70px;
+          padding-left: 15px;
+          margin-right: 10px; } }
+
+li {
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+  li a {
+    color: #fff; }
+
+.banner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  background-image: url("../images/dividerbg.jpg");
+  background-size: cover; }
+  .banner h1 {
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase; }
+
+.fill {
+  height: 100%;
+  width: 100%; }
+
+.divider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000; }
+  .divider .divider-icon {
+    max-width: 50px;
+    padding-bottom: 10px; }
+  .divider p {
+    text-align: center; }
+
+.info {
+  position: relative;
+  background-color: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../images/lighthouse-graphic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.tour {
+  background-image: url("../images/rocks.jpg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .tour p {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  @media (min-width: 640px) {
+    .tour {
+      padding-top: 250px;
+      padding-bottom: 250px; } }
+
+.sponsors {
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .sponsors p {
+    font-size: 12px; }
+  .sponsors div {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .sponsors h2 {
+    padding-bottom: 25px; }
+
+.contact-form {
+  background-color: #000;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  background-image: url("../images/contact-lighthouse.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .contact-form label {
+    color: white; }
+  .contact-form input,
+  .contact-form input:focus,
+  .contact-form textarea,
+  .contact-form textarea:focus {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff; }
+
+.about .banner {
+  background-image: url("../images/dividerbg.jpg");
+  max-height: 60vh; }
+
+.about .info {
+  background-image: none;
+  background-color: #000; }
+  .about .info .divider-icon {
+    max-width: 50px;
+    padding-bottom: 10px; }
+
+.about .info-imagery .info-imagery-blue {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #187FE8; }
+
+.about .info-imagery .info-imagery-white {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff; }
+  .about .info-imagery .info-imagery-white h2,
+  .about .info-imagery .info-imagery-white p {
+    color: #000; }
+
+.about .info-imagery .compass {
+  position: absolute;
+  opacity: 0;
+  margin-top: 8%;
+  margin-left: -50px;
+  max-width: 100px;
+  max-height: 100px; }
+  @media (min-width: 1280px) {
+    .about .info-imagery .compass {
+      opacity: 1; } }
+
+.about .restoration {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #187FE8; }
+  .about .restoration div:first-child {
+    padding-bottom: 50px; }
+  .about .restoration h2,
+  .about .restoration h3,
+  .about .restoration h4,
+  .about .restoration p {
+    color: #fff; }
+
+.booking .banner {
+  background-image: url("../images/dividerbg.jpg");
+  max-height: 60vh; }
+
+.booking .tour-info {
+  background-color: #000;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.booking .booking-table {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.booking .info {
+  background-image: none;
+  background-color: #000; }
+  .booking .info .divider-icon {
+    max-width: 50px;
+    padding-bottom: 10px; }
+
+.gallery .banner
+{
+  height: 60vh;
+}
+
+.gallery .photo-info
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #000;
+}
+
+.gallery .photo-gallery
+{
+  background-color: #000;
+}
+
+  .gallery .photo-gallery ul
+  {
+    margin: 0;
+    padding: 0;
+  }
+  .gallery .photo-gallery .gallery-hover
+  {
+    opacity: 0.5;
+    transition: 0.3s all;
+  }
+
+  .gallery .photo-gallery .gallery-hover:hover
+  {
+    opacity: 1;
+  }
+
+  .overlay
+  {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      width: 100%;
+      height: 100%;
+  		color: white;
+      background: rgba(0, 0, 0, 0.4);
+  }
+
+.fullImage
+{
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 2%;
+}
+
+.imgDesc
+{
+	position: absolute;
+}
+
+.arrow
+{
+    position: absolute;
+    margin-top: 15%;
+}
+
+.arrowLeft
+{
+	margin-left: 12%;
+}
+
+.arrowRight
+{
+	margin-left: 85%
+}
+
+.close
+{
+	float: right;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.donate .banner {
+  height: 60vh; }
+
+.donate .donations {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #000; }
+
+.donate .send-donation {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #187FE8; }

@@ -1,0 +1,369 @@
+@import "color";
+@import "mediaqueries";
+@import "spacing";
+
+.black-bg {
+    background-color: $black;
+}
+
+body {}
+
+nav {
+    .nav-logo {}
+
+    .nav-items {}
+}
+
+.copyright {
+  background-color: $black;
+}
+
+#going-up {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    // right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.button {
+    background-color: transparent;
+    border: 4px solid $white;
+    transition: 0.3s all;
+    font-size: 18px;
+
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
+}
+
+a,
+a:hover {
+    color: $white;
+}
+
+p {
+    color: $white;
+}
+
+h2,
+h3,
+h4 {
+    color: $white;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    .header-cta {
+        height: 30px;
+        margin-bottom: 3px;
+        background-color: $opacity-black-medium;
+
+        li {
+            line-height: 30px;
+
+            .header-phone {
+                max-width: 20px;
+                margin-left: 25px;
+                margin-right: 10px;
+            }
+
+            .header-icon {
+                max-width: 20px;
+                float: right;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .tel {
+                display: none;
+                @media (min-width: $small-up) {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .header-nav {
+        height: 50px;
+        background-color: $opacity-black-medium;
+
+        li {
+            line-height: 50px;
+            padding-left: $padding-h-sm;
+            margin-right: 10px;
+        }
+        @media (min-width: $small-up) {
+            height: 70px;
+
+            li {
+                line-height: 70px;
+                padding-left: $padding-h-sm;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: $white;
+    text-transform: uppercase;
+
+    a {
+        color: $white;
+    }
+}
+
+.banner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    // background-image: url("../images/lighthouse.jpg");
+    background-image: url("../images/dividerbg.jpg");
+    background-size: cover;
+
+    h1 {
+        color: white;
+        font-size: 100px;
+        text-transform: uppercase;
+    }
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.divider {
+    padding-top: $padding-v-md;
+    padding-bottom: $padding-v-md;
+    background-color: $black;
+
+    .divider-icon {
+        max-width: 50px;
+        padding-bottom: $padding-v-xs;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.info {
+    position: relative;
+    background-color: $black;
+    padding-top: $padding-v-xl;
+    padding-bottom: $padding-v-xl;
+    background-image: url("../images/lighthouse-graphic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tour {
+    background-image: url("../images/rocks.jpg");
+    background-size: cover;
+    padding-top: $padding-v-xl;
+    padding-bottom: $padding-v-xl;
+
+    p {
+        padding-top: $padding-v-sm;
+        padding-bottom: $padding-v-sm;
+    }
+    @media (min-width: $small-up) {
+        padding-top: $padding-v-xxxl;
+        padding-bottom: $padding-v-xxxl;
+    }
+}
+
+.sponsors {
+    background-color: $black;
+    padding-top: $padding-v-md;
+    padding-bottom: $padding-v-md;
+
+    p {
+        font-size: 12px;
+    }
+
+    div {
+        padding-left: $padding-h-xs;
+        padding-right: $padding-h-xs;
+    }
+
+    h2 {
+        padding-bottom: $padding-v-sm;
+    }
+}
+
+.contact-form {
+    background-color: $black;
+    padding-top: $padding-v-xxl;
+    padding-bottom: $padding-v-xxl;
+    background-image: url("../images/contact-lighthouse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    label {
+        color: white;
+    }
+
+    input,
+    input:focus,
+    textarea,
+    textarea:focus {
+        background-color: transparent;
+        color: $white;
+        border: 2px solid $white;
+    }
+}
+
+.about {
+    .banner {
+        background-image: url("../images/dividerbg.jpg");
+        max-height: 60vh;
+    }
+
+    .info {
+        background-image: none;
+        background-color: $black;
+
+        .divider-icon {
+            max-width: 50px;
+            padding-bottom: $padding-v-xs;
+        }
+    }
+
+    .info-imagery {
+        .info-imagery-blue {
+            padding-top: $padding-v-md;
+            padding-bottom: $padding-v-md;
+            background-color: $blue;
+        }
+
+        .info-imagery-white {
+            padding-top: $padding-v-md;
+            padding-bottom: $padding-v-md;
+            background-color: $white;
+
+            h2,
+            p {
+                color: $black;
+            }
+        }
+
+        .compass {
+            position: absolute;
+            opacity: 0;
+            margin-top: 8%;
+            margin-left: -50px;
+            max-width: 100px;
+            max-height: 100px;
+            @media (min-width: $large-up) {
+                opacity: 1;
+            }
+        }
+    }
+
+    .restoration {
+        padding-top: $padding-v-lg;
+        padding-bottom: $padding-v-lg;
+        // background-image:url('../images/red_stripes.jpg');
+        background-color: $blue;
+
+        div:first-child {
+            padding-bottom: $padding-v-md;
+        }
+
+        h2,
+        h3,
+        h4,
+        p {
+            color: $white;
+        }
+    }
+}
+
+.booking {
+    .banner {
+        background-image: url("../images/dividerbg.jpg");
+        max-height: 60vh;
+    }
+
+    .tour-info {
+        background-color: $black;
+        padding-top: $padding-v-lg;
+        padding-bottom: $padding-v-lg;
+    }
+
+    .booking-table {
+        padding-top: $padding-v-xl;
+        padding-bottom: $padding-v-xl;
+    }
+
+    .info {
+        background-image: none;
+        background-color: $black;
+
+        .divider-icon {
+            max-width: 50px;
+            padding-bottom: $padding-v-xs;
+        }
+    }
+}
+
+.gallery {
+    .banner {
+        height: 60vh;
+    }
+
+    .photo-info {
+        padding-top: $padding-v-xl;
+        padding-bottom: $padding-v-xl;
+        background-color: $black;
+    }
+
+    .photo-gallery {
+      background-color: $black;
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-hover {
+          opacity: 0.5;
+          transition: 0.3s all;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.donate {
+  .banner {
+    height: 60vh;
+  }
+  .donations {
+    padding-top: $padding-v-xl;
+    padding-bottom: $padding-v-xl;
+    background-color: $black;
+  }
+  .send-donation {
+    padding-top: $padding-v-xl;
+    padding-bottom: $padding-v-xl;
+    background-color: $blue;
+  }
+}
